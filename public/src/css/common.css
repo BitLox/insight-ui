@@ -24,7 +24,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 /* Styling for the ngProgress itself */
 #ngProgress {
-  background-color: #6C9032 !important;
+  background-color: #C80000 !important;
   box-shadow: none !important;
   color: #373D42 !important;
   height: 3px !important;
@@ -115,7 +115,7 @@ margin-left: 0;
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {background-color: #373D42;}
 
 .navbar-default {
-  background-color: #8DC429;
+  background-color: #FF0000;
   margin: 0;
   border: 0;
 }
@@ -128,7 +128,7 @@ margin-left: 0;
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus {
-  background-color: #6C9032;
+  background-color: #DB0000;
   color: #fff;
 }
 
@@ -148,13 +148,43 @@ margin-left: 0;
   cursor: pointer;
 }
 
+.insight-header {
+  background: url('../img/bitlox-header-logo.svg');
+  background-position: center center;
+  /* background-size: cover; */
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  /* background-origin: padding-box; */
+  /* background-clip: border-box; */
+  /* background-color: #ccc; */
+  
+  /* display: block; */
+  /* padding: 25px; */
+  width: 130px;
+  /* height: 0px; */
+  /* font-family: 'Ubuntu', sans-serif;
+  font-size: 34px;
+  font-style: italic;
+  font-weight: 700; */
+  overflow: hidden;
+}
+
 .insight {
   font-family: 'Ubuntu', sans-serif;
   font-size: 34px;
   font-style: italic;
   font-weight: 700;
-  overflow: hidden;
 }
+
+
+.navbar-brand {
+  float: left;
+  padding: 15px;
+  font-size: 18px;
+  line-height: 20px;
+  height: 64px;
+}
+
 
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
   color: #fffffe;
@@ -166,7 +196,7 @@ margin-left: 0;
 }
 
 .navbar-form .form-control {
-  background-color: #7CAD23;
+  background-color: #ED0000;
   border-radius: 3px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -201,14 +231,14 @@ margin-left: 0;
 #search { color: #fff; }
 
 #search::-webkit-input-placeholder {
-  color: #BCDF7E;
+  color: #FF3737;
   font-family: 'Ubuntu', sans-serif;
   font-style: italic;
   font-weight: 100;
 }
 
 #search::-moz-placeholder {
-  color: #BCDF7E;
+  color: #FF3737;
   font-family: 'Ubuntu', sans-serif;
   font-weight: 100;
 }
@@ -216,7 +246,7 @@ margin-left: 0;
 .status {
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
-  background-color: #597338;
+  background-color: #DB0000;
   border-radius: 3px;
   margin: 15px 0;
   padding: 8px 10px;
@@ -316,8 +346,8 @@ margin-left: 0;
   border-radius: 2px;
 }
 .btn-primary {
-  background-color: #8DC429;
-  border: 2px solid #76AF0F;
+  background-color: #ED0000;
+  border: 2px solid #DB0000;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active,
@@ -363,7 +393,7 @@ margin-left: 0;
 }
 
 .txvalues-primary {
-  background-color: #8DC429;
+  background-color: #FF1212;
 }
 
 .txvalues-default {
@@ -386,7 +416,7 @@ margin-left: 0;
   font-size: 14px;
   font-weight: normal;
 }
-.progress-bar-info { background-color: #8DC429; }
+.progress-bar-info { background-color: #FF1212; }
 
 /* Set the fixed height of the footer here */
 #footer {
@@ -459,7 +489,7 @@ margin-left: 0;
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
   border-top: none;
-  border: 1px solid #64920F;
+  border: 1px solid #DB0000;
   padding: 10px 20px;
   position: absolute;
   text-align: center;
@@ -634,22 +664,28 @@ margin-left: 0;
   width: 20%;
 }
 
+/* #navbar-header a.bitlox_logo {
+  background-image: url('../img/bitlox-header-logo.svg');
+  background-size: 50px;
+  width: 20%;
+} */
+
 @keyframes rotateThis {
-	from { transform: scale( 1 ) rotate( 0deg );   }
-	to   { transform: scale( 1 ) rotate( 360deg ); }
+  from { transform: scale( 1 ) rotate( 0deg );   }
+  to   { transform: scale( 1 ) rotate( 360deg ); }
 }
 
 @-webkit-keyframes rotateThis {
-	from { -webkit-transform: scale( 1 ) rotate( 0deg );   }
-	to   { -webkit-transform: scale( 1 ) rotate( 360deg ); }
+  from { -webkit-transform: scale( 1 ) rotate( 0deg );   }
+  to   { -webkit-transform: scale( 1 ) rotate( 360deg ); }
 }
 
 .icon-rotate {
-	animation-name: rotateThis;
-	animation-duration: 2s;
-	animation-iteration-count: infinite;
-	animation-timing-function: linear;
-	-webkit-animation-name: rotateThis;
+  animation-name: rotateThis;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  -webkit-animation-name: rotateThis;
   -webkit-animation-duration: 2s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
@@ -788,18 +824,20 @@ a.v_highlight_more {
     padding: 15px;
   }
   .insight {
+    display: none;
     font-size: 26px;
   }
   .navbar-nav>li>a {
     padding-top: 15px;
     padding-bottom: 15px;
+    font-size: 24px;
   }
   .container {
     padding-left: 0;
     padding-right: 0;
   }
   .navbar-default .navbar-toggle {
-    margin-top: 7px;
+    margin-top: 15px;
   }
   .navbar {
     min-height: 50px;
@@ -826,7 +864,7 @@ a.v_highlight_more {
   }
   .txvalues-primary {
     background: none;
-    color: #8DC429;
+    color: #FF1212;
   }
   .txvalues-default {
     background: none;
